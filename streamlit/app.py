@@ -37,13 +37,13 @@ if uploaded_files and not st.session_state.pdf_processed:
         with open(pdf_path, "wb") as f:
             f.write(uploaded_file.read())  # Save file directly
 
-    # st.session_state.pdf_processed = True  # Prevent re-processing on rerun
-    # faiss_text_index_path = uploaded_files[0].name[:-4] + "_" + "faiss_text_index.faiss"
-    # faiss_text_index_path = "advanced_pdf_1_faiss_text_index.faiss"
-    # process_pdfs(save_path, base_dir)
-    # st.session_state.pdf_processed = True  # Mark PDF as processed
-    # st.session_state.faiss_index_path = process_documents_and_create_faiss_index(base_dir, faiss_text_index_path)
-    # st.session_state.faiss_index_created = True  # Mark FAISS index as created
+    st.session_state.pdf_processed = True  # Prevent re-processing on rerun
+    faiss_text_index_path = uploaded_files[0].name[:-4] + "_" + "faiss_text_index.faiss"
+    faiss_text_index_path = "advanced_pdf_1_faiss_text_index.faiss"
+    process_pdfs(save_path, base_dir)
+    st.session_state.pdf_processed = True  # Mark PDF as processed
+    st.session_state.faiss_index_path = process_documents_and_create_faiss_index(base_dir, faiss_text_index_path)
+    st.session_state.faiss_index_created = True  # Mark FAISS index as created
 faiss_text_index_path = "saved_advanced_pdf_1_faiss_text_index.faiss"
 user_input = st.chat_input("Enter your message...")
 # faiss_text_index_path = "advanced_pdf_1_EU_faiss_text_index.faiss"
