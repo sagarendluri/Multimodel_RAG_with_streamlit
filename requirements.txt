@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain-community 
+langchain
+langchain-ollama
+python-multipart
+graphviz
+streamlit
+sentence-transformers
+pymupdf
+tabula-py
+faiss-cpu
+ollama
+
