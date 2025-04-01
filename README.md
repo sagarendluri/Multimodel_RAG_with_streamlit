@@ -1,6 +1,6 @@
 # Multimodel_RAG_with_streamlit
 Multi_modal_RAG
-
+![image](https://github.com/user-attachments/assets/4e160abf-70f3-474e-b278-f0e7b60d549a)
 This document demonstrates how to implement a multi-modal Retrieval-Augmented Generation (RAG) system using Ollama with Llama3:2 and gemma3:4b and LangChain. This pdfs documents contain a mixture of content types, including tables and images. Traditional RAG applications often lose valuable information captured in images. With the emergence of Multimodal Large Language Models (MLLMs), we can now leverage both text and image data in our RAG systems.
 In this notebook, we'll explore one approach to multi-modal RAG (Option 1):
 1.	Use multimodal embeddings huggingface to embed both images and text
